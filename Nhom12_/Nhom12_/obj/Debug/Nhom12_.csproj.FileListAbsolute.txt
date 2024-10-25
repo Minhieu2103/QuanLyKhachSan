@@ -1,0 +1,10 @@
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.exe.config
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.exe
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.pdb
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.csproj.AssemblyReference.cache
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.Properties.Resources.resources
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.csproj.GenerateResource.cache
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.csproj.CoreCompileInputs.cache
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.exe
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.pdb
+C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.Main.resources
