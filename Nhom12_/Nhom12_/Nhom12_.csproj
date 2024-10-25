@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datphong.cs">
+    <Compile Include="ChiTietDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Datphong.Designer.cs">
-      <DependentUpon>Datphong.cs</DependentUpon>
+    <Compile Include="ChiTietDatPhong.Designer.cs">
+      <DependentUpon>ChiTietDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatPhong.Designer.cs">
+      <DependentUpon>DatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -58,13 +64,25 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanPhong.Designer.cs">
+      <DependentUpon>NhanPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Datphong.resx">
-      <DependentUpon>Datphong.cs</DependentUpon>
+    <EmbeddedResource Include="ChiTietDatPhong.resx">
+      <DependentUpon>ChiTietDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatPhong.resx">
+      <DependentUpon>DatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanPhong.resx">
+      <DependentUpon>NhanPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

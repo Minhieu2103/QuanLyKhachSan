@@ -1,6 +1,6 @@
 ﻿namespace Nhom12_
 {
-    partial class Datphong
+    partial class DatPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datphong));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatPhong));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnHuyTK = new System.Windows.Forms.Button();
             this.btnTimKiemKH = new System.Windows.Forms.Button();
