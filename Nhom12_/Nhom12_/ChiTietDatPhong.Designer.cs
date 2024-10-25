@@ -131,6 +131,7 @@
             this.btnXoaKH.TabIndex = 20;
             this.btnXoaKH.Text = "Xóa khách hàng";
             this.btnXoaKH.UseVisualStyleBackColor = false;
+            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
             // 
             // btnDong
             // 
@@ -146,6 +147,7 @@
             this.btnDong.TabIndex = 25;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = false;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnCapNhatKH
             // 
@@ -160,6 +162,7 @@
             this.btnCapNhatKH.TabIndex = 11;
             this.btnCapNhatKH.Text = "Cập nhật khách hàng";
             this.btnCapNhatKH.UseVisualStyleBackColor = false;
+            this.btnCapNhatKH.Click += new System.EventHandler(this.btnCapNhatKH_Click);
             // 
             // txtDiaChi
             // 
@@ -267,6 +270,7 @@
             this.btnLuu.TabIndex = 10;
             this.btnLuu.Text = "Lưu thay đổi";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label2
             // 

@@ -16,5 +16,25 @@ namespace Nhom12_
         {
             InitializeComponent();
         }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhatKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaKH_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
