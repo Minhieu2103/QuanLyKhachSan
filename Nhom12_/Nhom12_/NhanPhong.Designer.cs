@@ -659,7 +659,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.ImageIndex = 2;
@@ -667,18 +667,18 @@
             this.label1.Location = new System.Drawing.Point(38, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(558, 90);
+            this.label1.Size = new System.Drawing.Size(457, 90);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhận Phòng";
             // 
-            // Nhanphong
+            // NhanPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2784, 1262);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Nhanphong";
+            this.Name = "NhanPhong";
             this.Text = "Nhanphong";
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();

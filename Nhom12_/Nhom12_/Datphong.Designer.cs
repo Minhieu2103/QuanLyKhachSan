@@ -519,7 +519,7 @@
             // 
             // label18
             // 
-            this.label18.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label18.ForeColor = System.Drawing.SystemColors.Window;
             this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label18.ImageIndex = 0;
@@ -527,7 +527,7 @@
             this.label18.Location = new System.Drawing.Point(40, 8);
             this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(360, 69);
+            this.label18.Size = new System.Drawing.Size(418, 69);
             this.label18.TabIndex = 0;
             this.label18.Text = "Đặt Phòng";
             // 
@@ -775,7 +775,7 @@
             this.dateNhan.Size = new System.Drawing.Size(362, 44);
             this.dateNhan.TabIndex = 2;
             // 
-            // Datphong
+            // DatPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -784,7 +784,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "Datphong";
+            this.Name = "DatPhong";
             this.Text = "Datphong";
             this.Load += new System.EventHandler(this.Datphong_Load);
             this.groupBox2.ResumeLayout(false);
