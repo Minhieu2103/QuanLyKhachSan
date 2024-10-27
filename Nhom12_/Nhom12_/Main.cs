@@ -24,51 +24,54 @@ namespace Nhom12_
         {
             timer1.Start();
         }
-     
-
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
-
+            DatPhong dp = new DatPhong();
+            dp.ShowDialog();
+            this.Hide();
         }
-
         private void btnNhanPhong_Click(object sender, EventArgs e)
         {
-
+            NhanPhong np = new NhanPhong();
+            np.ShowDialog();
         }
-
         private void btnSDDVTT_Click(object sender, EventArgs e)
-        {
-
+        {    
         }
-
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-
+            ThongKe tk = new ThongKe();
+            tk.ShowDialog();
         }
 
         private void btnQuanLiPhong_Click(object sender, EventArgs e)
         {
-
+            QuanLyPhong qlp = new QuanLyPhong();
+            qlp.ShowDialog();
         }
 
         private void btnQuanLiNV_Click(object sender, EventArgs e)
         {
-
+            QuanLyNhanVien qlnv = new QuanLyNhanVien();
+            qlnv.ShowDialog();
         }
 
         private void btnQLHoaDon_Click(object sender, EventArgs e)
         {
-
+            QuanLyHoaDon QLHD = new QuanLyHoaDon();
+            QLHD.ShowDialog();
         }
 
         private void btnQLDichVu_Click(object sender, EventArgs e)
         {
-
+            QuanLyDichVu s = new QuanLyDichVu();
+            s.ShowDialog();
         }
 
         private void btnQuyDinh_Click(object sender, EventArgs e)
         {
-
+            QuyDinh qd = new QuyDinh();
+            qd.ShowDialog();
         }
 
         private void btnSubAbout_Click(object sender, EventArgs e)
