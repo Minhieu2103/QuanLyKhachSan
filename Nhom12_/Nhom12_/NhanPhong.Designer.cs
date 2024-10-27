@@ -660,14 +660,14 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.ImageIndex = 2;
             this.label1.ImageList = this.imageList_icon;
             this.label1.Location = new System.Drawing.Point(38, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 90);
+            this.label1.Size = new System.Drawing.Size(538, 90);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhận Phòng";
             // 

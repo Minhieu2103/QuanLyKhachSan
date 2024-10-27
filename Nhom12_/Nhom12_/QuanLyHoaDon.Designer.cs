@@ -202,14 +202,14 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label5.ImageIndex = 0;
             this.label5.ImageList = this.imageList2;
             this.label5.Location = new System.Drawing.Point(4, -2);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1020, 102);
+            this.label5.Size = new System.Drawing.Size(1086, 102);
             this.label5.TabIndex = 17;
             this.label5.Text = "Quản Lý Danh Sách Hóa Đơn";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

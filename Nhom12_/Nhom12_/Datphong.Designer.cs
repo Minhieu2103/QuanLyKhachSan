@@ -520,14 +520,14 @@
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label18.ForeColor = System.Drawing.SystemColors.Window;
+            this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label18.ImageIndex = 0;
             this.label18.ImageList = this.imageListIcon;
-            this.label18.Location = new System.Drawing.Point(40, 8);
+            this.label18.Location = new System.Drawing.Point(15, 9);
             this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(418, 69);
+            this.label18.Size = new System.Drawing.Size(466, 69);
             this.label18.TabIndex = 0;
             this.label18.Text = "Đặt Phòng";
             // 

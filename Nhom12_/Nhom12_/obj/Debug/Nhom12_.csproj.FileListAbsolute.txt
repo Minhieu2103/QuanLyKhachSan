@@ -8,3 +8,13 @@ C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\De
 C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.exe
 C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.pdb
 C:\Users\minhhieu\Source\Repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.Main.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.ChiTietDatPhong.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.DatPhong.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.NhanPhong.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuanLyDichVu.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuanLyHoaDon.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuanLyNhanVien.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuanLyPhong.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuyDinh.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.SuDungDichVuVaThanToan.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.ThongKe.resources

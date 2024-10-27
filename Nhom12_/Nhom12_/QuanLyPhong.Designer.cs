@@ -70,17 +70,16 @@
             // 
             // label5
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label5.ImageIndex = 0;
             this.label5.ImageList = this.imageList2;
-            this.label5.Location = new System.Drawing.Point(22, 0);
+            this.label5.Location = new System.Drawing.Point(0, 6);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(598, 92);
+            this.label5.Size = new System.Drawing.Size(678, 92);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Quản Lý Phòng:";
+            this.label5.Text = "Quản Lý Phòng";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList2

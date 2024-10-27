@@ -328,7 +328,7 @@
             this.label5.Location = new System.Drawing.Point(22, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(638, 92);
+            this.label5.Size = new System.Drawing.Size(718, 92);
             this.label5.TabIndex = 17;
             this.label5.Text = "Quản Lý Dịch Vụ:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

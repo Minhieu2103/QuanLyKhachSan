@@ -96,14 +96,14 @@
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label14.ImageIndex = 4;
             this.label14.ImageList = this.imageList_Icon;
             this.label14.Location = new System.Drawing.Point(15, 0);
             this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(674, 85);
+            this.label14.Size = new System.Drawing.Size(749, 85);
             this.label14.TabIndex = 0;
             this.label14.Text = "Chi Tiết Đặt Phòng ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

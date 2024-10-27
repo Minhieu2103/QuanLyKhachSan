@@ -513,14 +513,14 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.ImageIndex = 4;
             this.label2.ImageList = this.imageList_iCon;
             this.label2.Location = new System.Drawing.Point(6, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(679, 81);
+            this.label2.Size = new System.Drawing.Size(734, 81);
             this.label2.TabIndex = 5;
             this.label2.Text = "Quản Lý Nhân Viên";
             // 
