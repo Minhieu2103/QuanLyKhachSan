@@ -16,5 +16,30 @@ namespace Nhom12_
         {
             InitializeComponent();
         }
+
+        private void btnThemPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhatPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiemPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDongDSPhong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

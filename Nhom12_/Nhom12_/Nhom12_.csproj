@@ -80,6 +80,12 @@
     <Compile Include="QuanLyDichVu.Designer.cs">
       <DependentUpon>QuanLyDichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHoaDon.Designer.cs">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,24 @@
     </Compile>
     <Compile Include="QuanLyPhong.Designer.cs">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyDinh.Designer.cs">
+      <DependentUpon>QuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuDungDichVuVaThanToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuDungDichVuVaThanToan.Designer.cs">
+      <DependentUpon>SuDungDichVuVaThanToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ChiTietDatPhong.resx">
       <DependentUpon>ChiTietDatPhong.cs</DependentUpon>
@@ -116,11 +140,23 @@
     <EmbeddedResource Include="QuanLyDichVu.resx">
       <DependentUpon>QuanLyDichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHoaDon.resx">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyPhong.resx">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuyDinh.resx">
+      <DependentUpon>QuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuDungDichVuVaThanToan.resx">
+      <DependentUpon>SuDungDichVuVaThanToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

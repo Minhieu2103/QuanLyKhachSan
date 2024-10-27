@@ -153,6 +153,7 @@
             this.btnXoaPhong.TabIndex = 28;
             this.btnXoaPhong.Text = "Xóa Phòng";
             this.btnXoaPhong.UseVisualStyleBackColor = true;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
             // 
             // imageList1
             // 
@@ -182,6 +183,7 @@
             this.btnDongDSPhong.Text = "Đóng Danh Sách Phòng";
             this.btnDongDSPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDongDSPhong.UseVisualStyleBackColor = true;
+            this.btnDongDSPhong.Click += new System.EventHandler(this.btnDongDSPhong_Click);
             // 
             // btnCapNhatPhong
             // 
@@ -196,6 +198,7 @@
             this.btnCapNhatPhong.TabIndex = 26;
             this.btnCapNhatPhong.Text = "Cập Nhật Phòng";
             this.btnCapNhatPhong.UseVisualStyleBackColor = true;
+            this.btnCapNhatPhong.Click += new System.EventHandler(this.btnCapNhatPhong_Click);
             // 
             // btnTimKiemPhong
             // 
@@ -211,6 +214,7 @@
             this.btnTimKiemPhong.Text = "Tìm Kiếm";
             this.btnTimKiemPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiemPhong.UseVisualStyleBackColor = true;
+            this.btnTimKiemPhong.Click += new System.EventHandler(this.btnTimKiemPhong_Click);
             // 
             // txtSearch
             // 
@@ -234,6 +238,7 @@
             this.btnThemPhong.TabIndex = 27;
             this.btnThemPhong.Text = "Thêm Phòng";
             this.btnThemPhong.UseVisualStyleBackColor = true;
+            this.btnThemPhong.Click += new System.EventHandler(this.btnThemPhong_Click);
             // 
             // udSLNguoi
             // 
