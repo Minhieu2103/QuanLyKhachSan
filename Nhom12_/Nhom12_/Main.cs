@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom12_.ClassLogin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,13 @@ namespace Nhom12_
     {
         bool hiden = true;
         int pw;
+        private string tenDangNhap = "";
+        Modify modify = new Modify();
         public Main()
         {
             InitializeComponent();
             pw = panelSlider.Width;
+            this.tenDangNhap = Login.tenTK;
         }
 
         private void btnSlider_Click(object sender, EventArgs e)
@@ -36,7 +40,11 @@ namespace Nhom12_
             np.ShowDialog();
         }
         private void btnSDDVTT_Click(object sender, EventArgs e)
-        {    
+        {
+            string squery = "Select HoTen from NhanVien where TenDangNhap = '" + tenDangNhap + "'";
+            string HoTen = modify.GetID(squery);
+            SuDungDichVuVaThanToan dvtt = new SuDungDichVuVaThanToan(HoTen);
+            dvtt.ShowDialog();
         }
         private void btnThongKe_Click(object sender, EventArgs e)
         {
@@ -96,12 +104,13 @@ namespace Nhom12_
 
         private void btnSubAccount_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-
+            ThongTinTaiKhoan tk = new ThongTinTaiKhoan(tenDangNhap);
+            tk.ShowDialog();
         }
 
         private void btnSubLogOut_Click(object sender, EventArgs e)
@@ -111,7 +120,9 @@ namespace Nhom12_
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-
+            Login lg = new Login();
+            lg.Show();
+            this.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -137,6 +148,29 @@ namespace Nhom12_
                 }
             }
 
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+           
+                this.btnQuanLiNV.Enabled = false;
+                this.btnQuanLiPhong.Enabled = false;
+                this.btnQLDichVu.Enabled = false;
+                this.btnQuanLiNV.Enabled = false;
+                string chucVu = "";
+                DataTableReader reader = modify.GetDataTable("Select ChucVu From NhanVien Where TenDangNhap = '" + tenDangNhap + "' ").CreateDataReader();
+                while (reader.Read())
+                {
+                    chucVu = reader.GetString(0);
+                }
+                if (chucVu == "Admin")
+                {
+                    this.btnQuanLiNV.Enabled = true;
+                    this.btnQuanLiPhong.Enabled = true;
+                    this.btnQLDichVu.Enabled = true;
+                    this.btnQuanLiNV.Enabled = true;
+                }
+                lblChuVu.Text = chucVu;           
         }
     }
 }

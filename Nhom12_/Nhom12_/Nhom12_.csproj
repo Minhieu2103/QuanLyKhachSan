@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="ClassLogin\Connection.cs" />
     <Compile Include="ClassLogin\DichVu.cs" />
+    <Compile Include="ClassLogin\Modify.cs" />
+    <Compile Include="ClassLogin\TaiKhoan.cs" />
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>

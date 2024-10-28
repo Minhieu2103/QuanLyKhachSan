@@ -15,6 +15,12 @@ namespace Nhom12_
         public Login()
         {
             InitializeComponent();
+
+        }
+        public static string tenTK = ""
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
