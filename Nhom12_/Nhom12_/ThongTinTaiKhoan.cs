@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace Nhom12_
 {
-    public partial class QuanLyNhanVien : Form
+    public partial class ThongTinTaiKhoan: Form
     {
-        public QuanLyNhanVien()
+        public ThongTinTaiKhoan()
         {
             InitializeComponent();
         }
 
-        private void btnThucHien_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDeleteNV_Click(object sender, EventArgs e)
+        private void ThongTinTaiKhoan_Load(object sender, EventArgs e)
         {
 
         }

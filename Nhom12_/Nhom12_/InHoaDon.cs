@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Nhom12_
 {
-    public partial class QuanLyNhanVien : Form
+    public partial class InHoaDon : Form
     {
-        public QuanLyNhanVien()
+        public InHoaDon()
         {
             InitializeComponent();
         }
 
-        private void btnThucHien_Click(object sender, EventArgs e)
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnDong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDeleteNV_Click(object sender, EventArgs e)
+        private void InHoaDon_Load(object sender, EventArgs e)
         {
 
         }

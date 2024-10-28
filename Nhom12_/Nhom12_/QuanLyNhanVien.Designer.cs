@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanVien));
-            this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
-            this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePickerNgayVaoLam = new System.Windows.Forms.DateTimePicker();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGirdViewDSNhanVien = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBoxChucVu = new System.Windows.Forms.ComboBox();
@@ -52,8 +44,19 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
+            this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
+            this.dateTimePickerNgayVaoLam = new System.Windows.Forms.DateTimePicker();
             this.txtCMND = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dataGirdViewDSNhanVien = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.radioBtAddNV = new System.Windows.Forms.RadioButton();
@@ -62,129 +65,32 @@
             this.imageList_iCon = new System.Windows.Forms.ImageList(this.components);
             this.btnDeleteNV = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGirdViewDSNhanVien)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGirdViewDSNhanVien)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // comboBoxGioiTinh
-            // 
-            this.comboBoxGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGioiTinh.FormattingEnabled = true;
-            this.comboBoxGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.comboBoxGioiTinh.Location = new System.Drawing.Point(40, 285);
-            this.comboBoxGioiTinh.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
-            this.comboBoxGioiTinh.Size = new System.Drawing.Size(450, 45);
-            this.comboBoxGioiTinh.TabIndex = 17;
-            // 
-            // dateNgaySinh
-            // 
-            this.dateNgaySinh.CustomFormat = "MM/dd/yyyy";
-            this.dateNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgaySinh.Location = new System.Drawing.Point(40, 385);
-            this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(6);
-            this.dateNgaySinh.Name = "dateNgaySinh";
-            this.dateNgaySinh.Size = new System.Drawing.Size(450, 44);
-            this.dateNgaySinh.TabIndex = 15;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(40, 588);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(6);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(450, 44);
-            this.txtDiaChi.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(32, 646);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(231, 37);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Ngày Vào Làm";
-            // 
-            // dateTimePickerNgayVaoLam
-            // 
-            this.dateTimePickerNgayVaoLam.CustomFormat = "MM/dd/yyyy";
-            this.dateTimePickerNgayVaoLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerNgayVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerNgayVaoLam.Location = new System.Drawing.Point(40, 698);
-            this.dateTimePickerNgayVaoLam.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePickerNgayVaoLam.Name = "dateTimePickerNgayVaoLam";
-            this.dateTimePickerNgayVaoLam.Size = new System.Drawing.Size(446, 44);
-            this.dateTimePickerNgayVaoLam.TabIndex = 16;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.groupBox5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(1180, 104);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1506, 1457);
-            this.panel3.TabIndex = 11;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.dataGirdViewDSNhanVien);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(0, 0);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(6);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox5.Size = new System.Drawing.Size(1506, 1457);
-            this.groupBox5.TabIndex = 1;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Danh Sách Nhân Viên";
-            // 
-            // dataGirdViewDSNhanVien
-            // 
-            this.dataGirdViewDSNhanVien.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGirdViewDSNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGirdViewDSNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGirdViewDSNhanVien.Location = new System.Drawing.Point(6, 36);
-            this.dataGirdViewDSNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGirdViewDSNhanVien.Name = "dataGirdViewDSNhanVien";
-            this.dataGirdViewDSNhanVien.RowHeadersWidth = 62;
-            this.dataGirdViewDSNhanVien.RowTemplate.Height = 28;
-            this.dataGirdViewDSNhanVien.Size = new System.Drawing.Size(1494, 1415);
-            this.dataGirdViewDSNhanVien.TabIndex = 0;
             // 
             // panel6
             // 
@@ -357,6 +263,52 @@
             this.txtSearch.Size = new System.Drawing.Size(470, 44);
             this.txtSearch.TabIndex = 1;
             // 
+            // comboBoxGioiTinh
+            // 
+            this.comboBoxGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGioiTinh.FormattingEnabled = true;
+            this.comboBoxGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBoxGioiTinh.Location = new System.Drawing.Point(40, 285);
+            this.comboBoxGioiTinh.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
+            this.comboBoxGioiTinh.Size = new System.Drawing.Size(450, 45);
+            this.comboBoxGioiTinh.TabIndex = 17;
+            // 
+            // dateNgaySinh
+            // 
+            this.dateNgaySinh.CustomFormat = "MM/dd/yyyy";
+            this.dateNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgaySinh.Location = new System.Drawing.Point(40, 385);
+            this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(6);
+            this.dateNgaySinh.Name = "dateNgaySinh";
+            this.dateNgaySinh.Size = new System.Drawing.Size(450, 44);
+            this.dateNgaySinh.TabIndex = 15;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(40, 588);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(6);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(450, 44);
+            this.txtDiaChi.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(32, 646);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(231, 37);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Ngày Vào Làm";
+            // 
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,6 +318,17 @@
             this.txtSDT.Size = new System.Drawing.Size(450, 44);
             this.txtSDT.TabIndex = 12;
             // 
+            // dateTimePickerNgayVaoLam
+            // 
+            this.dateTimePickerNgayVaoLam.CustomFormat = "MM/dd/yyyy";
+            this.dateTimePickerNgayVaoLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerNgayVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerNgayVaoLam.Location = new System.Drawing.Point(40, 698);
+            this.dateTimePickerNgayVaoLam.Margin = new System.Windows.Forms.Padding(6);
+            this.dateTimePickerNgayVaoLam.Name = "dateTimePickerNgayVaoLam";
+            this.dateTimePickerNgayVaoLam.Size = new System.Drawing.Size(446, 44);
+            this.dateTimePickerNgayVaoLam.TabIndex = 16;
+            // 
             // txtCMND
             // 
             this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,6 +337,76 @@
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(450, 44);
             this.txtCMND.TabIndex = 13;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.groupBox5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(1180, 104);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1506, 1450);
+            this.panel3.TabIndex = 11;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dataGirdViewDSNhanVien);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(0, 0);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox5.Size = new System.Drawing.Size(1506, 1450);
+            this.groupBox5.TabIndex = 1;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Danh Sách Nhân Viên";
+            // 
+            // dataGirdViewDSNhanVien
+            // 
+            this.dataGirdViewDSNhanVien.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGirdViewDSNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGirdViewDSNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGirdViewDSNhanVien.Location = new System.Drawing.Point(6, 36);
+            this.dataGirdViewDSNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGirdViewDSNhanVien.Name = "dataGirdViewDSNhanVien";
+            this.dataGirdViewDSNhanVien.RowHeadersWidth = 62;
+            this.dataGirdViewDSNhanVien.RowTemplate.Height = 28;
+            this.dataGirdViewDSNhanVien.Size = new System.Drawing.Size(1494, 1408);
+            this.dataGirdViewDSNhanVien.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label11.Location = new System.Drawing.Point(28, 546);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 37);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Địa Chỉ:";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 104);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1180, 1450);
+            this.panel2.TabIndex = 10;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.groupBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 1108);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1180, 342);
+            this.panel5.TabIndex = 8;
             // 
             // groupBox1
             // 
@@ -416,7 +449,6 @@
             this.radioBtAddNV.TabStop = true;
             this.radioBtAddNV.Text = "Thêm nhân viên";
             this.radioBtAddNV.UseVisualStyleBackColor = true;
-            this.radioBtAddNV.CheckedChanged += new System.EventHandler(this.radioBtAddNV_CheckedChanged);
             // 
             // radioBtcapnhatNV
             // 
@@ -429,7 +461,6 @@
             this.radioBtcapnhatNV.TabStop = true;
             this.radioBtcapnhatNV.Text = "Cập nhật nhân viên";
             this.radioBtcapnhatNV.UseVisualStyleBackColor = true;
-            this.radioBtcapnhatNV.CheckedChanged += new System.EventHandler(this.radioBtcapnhatNV_CheckedChanged);
             // 
             // btnThucHien
             // 
@@ -497,32 +528,26 @@
             this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
-            // panel1
+            // panel4
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(1180, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1354, 104);
-            this.panel1.TabIndex = 9;
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1180, 779);
+            this.panel4.TabIndex = 8;
             // 
-            // label2
+            // panel7
             // 
-            this.label2.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.ImageIndex = 4;
-            this.label2.ImageList = this.imageList_iCon;
-            this.label2.Location = new System.Drawing.Point(6, 17);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(734, 81);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Quản Lý Nhân Viên";
+            this.panel7.Controls.Add(this.groupBox4);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(590, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(6);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(540, 779);
+            this.panel7.TabIndex = 8;
             // 
             // groupBox4
             // 
@@ -550,18 +575,6 @@
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin nhân viên";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label11.Location = new System.Drawing.Point(28, 546);
-            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 37);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Địa Chỉ:";
             // 
             // label9
             // 
@@ -632,90 +645,67 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Tên";
             // 
-            // panel5
+            // label2
             // 
-            this.panel5.Controls.Add(this.groupBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 1219);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1180, 342);
-            this.panel5.TabIndex = 8;
+            this.label2.Font = new System.Drawing.Font("Verdana", 22.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.ImageIndex = 4;
+            this.label2.ImageList = this.imageList_iCon;
+            this.label2.Location = new System.Drawing.Point(6, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(743, 81);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Quản Lý Nhân Viên";
             // 
-            // panel4
+            // panel1
             // 
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1180, 779);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.groupBox4);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(590, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(6);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(540, 779);
-            this.panel7.TabIndex = 8;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1180, 1561);
-            this.panel2.TabIndex = 10;
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2702, 104);
+            this.panel1.TabIndex = 9;
             // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2534, 1561);
+            this.ClientSize = new System.Drawing.Size(2702, 1554);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "QuanLyNhanVien";
             this.Text = "QuanLyNhanVien";
-            this.panel3.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGirdViewDSNhanVien)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGirdViewDSNhanVien)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxGioiTinh;
-        private System.Windows.Forms.DateTimePicker dateNgaySinh;
-        private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNgayVaoLam;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGirdViewDSNhanVien;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox comboBoxChucVu;
@@ -730,8 +720,19 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ComboBox comboBoxGioiTinh;
+        private System.Windows.Forms.DateTimePicker dateNgaySinh;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNgayVaoLam;
         private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dataGirdViewDSNhanVien;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton radioBtAddNV;
@@ -740,19 +741,16 @@
         private System.Windows.Forms.ImageList imageList_iCon;
         private System.Windows.Forms.Button btnDeleteNV;
         private System.Windows.Forms.Button btnDong;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
