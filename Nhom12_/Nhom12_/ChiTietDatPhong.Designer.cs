@@ -92,6 +92,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2214, 85);
             this.panel1.TabIndex = 29;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label14
             // 
@@ -335,6 +336,7 @@
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin khách hàng";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label13
             // 
@@ -529,6 +531,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "ChiTietDatPhong";
             this.Text = "ChiTietDatPhong";
+            this.Load += new System.EventHandler(this.ChiTietDatPhong_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.udSoDem)).EndInit();
             this.groupBox4.ResumeLayout(false);
