@@ -56,7 +56,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1378, 406);
+            this.panel1.Size = new System.Drawing.Size(841, 406);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -65,7 +65,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1378, 406);
+            this.pictureBox1.Size = new System.Drawing.Size(841, 406);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -94,7 +94,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 406);
             this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1378, 496);
+            this.panel3.Size = new System.Drawing.Size(841, 496);
             this.panel3.TabIndex = 7;
             // 
             // txtEmail
@@ -176,7 +176,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 902);
             this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1378, 135);
+            this.panel5.Size = new System.Drawing.Size(841, 135);
             this.panel5.TabIndex = 10;
             // 
             // btnDangKy
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 1387);
+            this.ClientSize = new System.Drawing.Size(841, 1387);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

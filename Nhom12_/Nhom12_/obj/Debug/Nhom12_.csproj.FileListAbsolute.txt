@@ -40,3 +40,8 @@ C:\Users\Admin\source\repos\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.csp
 C:\Users\Admin\source\repos\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.exe
 C:\Users\Admin\source\repos\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.pdb
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.DangKy.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.InHoaDon.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.Login.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuenMatKhau.resources
+C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.ThongTinTaiKhoan.resources

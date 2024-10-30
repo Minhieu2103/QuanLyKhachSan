@@ -241,6 +241,7 @@
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label3
             // 
@@ -374,6 +375,7 @@
             this.dataGirdViewDSNhanVien.RowTemplate.Height = 28;
             this.dataGirdViewDSNhanVien.Size = new System.Drawing.Size(1494, 1408);
             this.dataGirdViewDSNhanVien.TabIndex = 0;
+            this.dataGirdViewDSNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGirdViewDSNhanVien_CellContentClick);
             // 
             // label11
             // 
@@ -449,6 +451,7 @@
             this.radioBtAddNV.TabStop = true;
             this.radioBtAddNV.Text = "Thêm nhân viên";
             this.radioBtAddNV.UseVisualStyleBackColor = true;
+            this.radioBtAddNV.CheckedChanged += new System.EventHandler(this.radioBtAddNV_CheckedChanged);
             // 
             // radioBtcapnhatNV
             // 
@@ -461,6 +464,7 @@
             this.radioBtcapnhatNV.TabStop = true;
             this.radioBtcapnhatNV.Text = "Cập nhật nhân viên";
             this.radioBtcapnhatNV.UseVisualStyleBackColor = true;
+            this.radioBtcapnhatNV.CheckedChanged += new System.EventHandler(this.radioBtcapnhatNV_CheckedChanged);
             // 
             // btnThucHien
             // 
@@ -682,6 +686,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "QuanLyNhanVien";
             this.Text = "QuanLyNhanVien";
+            this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
             this.panel6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

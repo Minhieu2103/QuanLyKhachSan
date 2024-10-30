@@ -363,6 +363,7 @@
             this.dataGridViewPhong.RowTemplate.Height = 24;
             this.dataGridViewPhong.Size = new System.Drawing.Size(1244, 1077);
             this.dataGridViewPhong.TabIndex = 16;
+            this.dataGridViewPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPhong_CellContentClick);
             // 
             // groupBox1
             // 
@@ -419,6 +420,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "QuanLyPhong";
             this.Text = "QuanLyPhong";
+            this.Load += new System.EventHandler(this.QuanLyPhong_Load);
             this.panel5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
