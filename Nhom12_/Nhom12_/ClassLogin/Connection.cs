@@ -9,7 +9,7 @@ namespace Nhom12_.ClassLogin
 {
     internal class Connection
     {
-        private static string stringConnection = "Data Source=NHOM12;Initial Catalog=QUANLYKHACHSAN;Integrated Security=True";
+        private static string stringConnection = "Data Source=ADMIN-PC\\MSSQLSERVER_VIP;Initial Catalog=QUANLYKHACHSAN;Integrated Security=True;";
 
         public static SqlConnection GetSqlConnection()
         {
