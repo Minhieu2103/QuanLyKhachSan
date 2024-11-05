@@ -114,6 +114,7 @@
             this.btnLayLaiPass.TabIndex = 0;
             this.btnLayLaiPass.Text = "Lấy Lại Mật Khẩu";
             this.btnLayLaiPass.UseVisualStyleBackColor = true;
+            this.btnLayLaiPass.Click += new System.EventHandler(this.btnLayLaiPass_Click);
             // 
             // btnThoat
             // 
