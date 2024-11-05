@@ -321,7 +321,7 @@ namespace Nhom12_
 
             }
 
-            In hd = new InHoaDon(maKH, HoTenNhanVien, int.Parse(txtTongTien.Text), maHD, (int)udGiamGia.Value);
+           InHoaDon hd = new InHoaDon(maKH, HoTenNhanVien, int.Parse(txtTongTien.Text), maHD, (int)udGiamGia.Value);
             hd.ShowDialog();
         }
 
