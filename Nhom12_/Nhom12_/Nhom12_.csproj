@@ -95,11 +95,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLiDichVu.cs">
+    <Compile Include="QuanLyDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLiDichVu.Designer.cs">
-      <DependentUpon>QuanLiDichVu.cs</DependentUpon>
+    <Compile Include="QuanLyDichVu.Designer.cs">
+      <DependentUpon>QuanLyDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyHoaDon.cs">
       <SubType>Form</SubType>
@@ -113,11 +113,11 @@
     <Compile Include="QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLiPhong.cs">
+    <Compile Include="QuanLyPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLiPhong.Designer.cs">
-      <DependentUpon>QuanLiPhong.cs</DependentUpon>
+    <Compile Include="QuanLyPhong.Designer.cs">
+      <DependentUpon>QuanLyPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="QuenMatKhau.cs">
       <SubType>Form</SubType>
@@ -179,8 +179,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuanLiDichVu.resx">
-      <DependentUpon>QuanLiDichVu.cs</DependentUpon>
+    <EmbeddedResource Include="QuanLyDichVu.resx">
+      <DependentUpon>QuanLyDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLiPhong.resx">
-      <DependentUpon>QuanLiPhong.cs</DependentUpon>
+    <EmbeddedResource Include="QuanLyPhong.resx">
+      <DependentUpon>QuanLyPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>

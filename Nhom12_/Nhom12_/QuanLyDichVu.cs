@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom12_.ClassLogin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,15 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Nhom12_
+
 {
-    public partial class QuanLiDichVu : Form
+    public partial class QuanLyDichVu : Form
     {
-        public QuanLiDichVu()
+        public QuanLyDichVu()
         {
             InitializeComponent();
         }
         String querytableDV = "select * from DichVu";
-        ClassLogin.Modify modify = new ClassLogin.Modify();
+        Modify modify = new Modify();
         public void loadGirdView()
         {
             dataGridViewDV.ReadOnly = true;
@@ -104,4 +106,3 @@ namespace Nhom12_
         }
     }
 }
-

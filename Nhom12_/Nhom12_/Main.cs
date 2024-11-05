@@ -54,7 +54,7 @@ namespace Nhom12_
 
         private void btnQuanLiPhong_Click(object sender, EventArgs e)
         {
-            QuanLiPhong qlp = new QuanLiPhong();
+            QuanLyPhong qlp = new QuanLyPhong();
             qlp.ShowDialog();
         }
 
@@ -72,7 +72,7 @@ namespace Nhom12_
 
         private void btnQLDichVu_Click(object sender, EventArgs e)
         {
-            QuanLiDichVu s = new QuanLiDichVu();
+            QuanLyDichVu s = new QuanLyDichVu();
             s.ShowDialog();
         }
 
