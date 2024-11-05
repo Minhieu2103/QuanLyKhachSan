@@ -184,7 +184,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2294, 298);
+            this.panel1.Size = new System.Drawing.Size(2022, 298);
             this.panel1.TabIndex = 5;
             // 
             // lblMaHoaDon
@@ -576,7 +576,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 298);
             this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2294, 317);
+            this.panel4.Size = new System.Drawing.Size(2022, 317);
             this.panel4.TabIndex = 8;
             // 
             // printPreviewDialog2
@@ -754,14 +754,14 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(30, 29, 30, 0);
-            this.panel3.Size = new System.Drawing.Size(2294, 562);
+            this.panel3.Size = new System.Drawing.Size(2022, 562);
             this.panel3.TabIndex = 6;
             // 
             // InHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2294, 1197);
+            this.ClientSize = new System.Drawing.Size(2022, 1197);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);

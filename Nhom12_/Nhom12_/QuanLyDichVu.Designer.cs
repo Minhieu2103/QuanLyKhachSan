@@ -342,7 +342,7 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(2187, 1062);
+            this.panel3.Size = new System.Drawing.Size(1991, 1062);
             this.panel3.TabIndex = 32;
             // 
             // panel1
@@ -353,14 +353,14 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2187, 98);
+            this.panel1.Size = new System.Drawing.Size(1991, 98);
             this.panel1.TabIndex = 33;
             // 
             // QuanLyDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2187, 1224);
+            this.ClientSize = new System.Drawing.Size(1991, 1224);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "QuanLyDichVu";

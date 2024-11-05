@@ -252,7 +252,7 @@
             this.btnUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(252)))));
             this.btnUser.ImageIndex = 1;
             this.btnUser.ImageList = this.imageListIcon;
-            this.btnUser.Location = new System.Drawing.Point(0, 1026);
+            this.btnUser.Location = new System.Drawing.Point(0, 987);
             this.btnUser.Margin = new System.Windows.Forms.Padding(6);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(122, 98);
@@ -281,7 +281,7 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(252)))));
             this.btnLogOut.ImageIndex = 2;
             this.btnLogOut.ImageList = this.imageListIcon;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 1124);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 1085);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(122, 98);
@@ -300,7 +300,7 @@
             this.panelSlider.Location = new System.Drawing.Point(122, 0);
             this.panelSlider.Margin = new System.Windows.Forms.Padding(6);
             this.panelSlider.Name = "panelSlider";
-            this.panelSlider.Size = new System.Drawing.Size(360, 1418);
+            this.panelSlider.Size = new System.Drawing.Size(360, 1379);
             this.panelSlider.TabIndex = 21;
             // 
             // btnSubAccount
@@ -312,7 +312,7 @@
             this.btnSubAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubAccount.ForeColor = System.Drawing.Color.Black;
             this.btnSubAccount.ImageIndex = 0;
-            this.btnSubAccount.Location = new System.Drawing.Point(0, 1026);
+            this.btnSubAccount.Location = new System.Drawing.Point(0, 987);
             this.btnSubAccount.Margin = new System.Windows.Forms.Padding(6);
             this.btnSubAccount.Name = "btnSubAccount";
             this.btnSubAccount.Size = new System.Drawing.Size(360, 98);
@@ -331,7 +331,7 @@
             this.btnSubLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubLogOut.ForeColor = System.Drawing.Color.Black;
             this.btnSubLogOut.ImageIndex = 0;
-            this.btnSubLogOut.Location = new System.Drawing.Point(0, 1124);
+            this.btnSubLogOut.Location = new System.Drawing.Point(0, 1085);
             this.btnSubLogOut.Margin = new System.Windows.Forms.Padding(6);
             this.btnSubLogOut.Name = "btnSubLogOut";
             this.btnSubLogOut.Size = new System.Drawing.Size(360, 98);
@@ -350,7 +350,7 @@
             this.btnSubHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubHelp.ForeColor = System.Drawing.Color.Black;
             this.btnSubHelp.ImageIndex = 0;
-            this.btnSubHelp.Location = new System.Drawing.Point(0, 1222);
+            this.btnSubHelp.Location = new System.Drawing.Point(0, 1183);
             this.btnSubHelp.Margin = new System.Windows.Forms.Padding(6);
             this.btnSubHelp.Name = "btnSubHelp";
             this.btnSubHelp.Size = new System.Drawing.Size(360, 98);
@@ -369,7 +369,7 @@
             this.btnSubAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubAbout.ForeColor = System.Drawing.Color.Black;
             this.btnSubAbout.ImageIndex = 0;
-            this.btnSubAbout.Location = new System.Drawing.Point(0, 1320);
+            this.btnSubAbout.Location = new System.Drawing.Point(0, 1281);
             this.btnSubAbout.Margin = new System.Windows.Forms.Padding(6);
             this.btnSubAbout.Name = "btnSubAbout";
             this.btnSubAbout.Size = new System.Drawing.Size(360, 98);
@@ -387,7 +387,7 @@
             this.btnHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(252)))));
             this.btnHelp.ImageIndex = 3;
             this.btnHelp.ImageList = this.imageListIcon;
-            this.btnHelp.Location = new System.Drawing.Point(0, 1222);
+            this.btnHelp.Location = new System.Drawing.Point(0, 1183);
             this.btnHelp.Margin = new System.Windows.Forms.Padding(6);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(122, 98);
@@ -403,7 +403,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(252)))));
             this.btnAbout.ImageIndex = 4;
             this.btnAbout.ImageList = this.imageListIcon;
-            this.btnAbout.Location = new System.Drawing.Point(0, 1320);
+            this.btnAbout.Location = new System.Drawing.Point(0, 1281);
             this.btnAbout.Margin = new System.Windows.Forms.Padding(6);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(122, 98);
@@ -477,14 +477,15 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(122, 1418);
+            this.panel1.Size = new System.Drawing.Size(122, 1379);
             this.panel1.TabIndex = 20;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2797, 1418);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(2797, 1379);
             this.Controls.Add(this.lblChuVu);
             this.Controls.Add(this.btnQuanLiNV);
             this.Controls.Add(this.btnQuanLiPhong);
@@ -498,7 +499,9 @@
             this.Controls.Add(this.panelSlider);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelSlider.ResumeLayout(false);
