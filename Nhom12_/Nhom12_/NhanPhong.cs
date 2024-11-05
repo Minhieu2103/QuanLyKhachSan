@@ -13,6 +13,11 @@ namespace Nhom12_
 {
     public partial class NhanPhong : Form
     {
+        public NhanPhong()
+        {
+            InitializeComponent();
+        }
+
         Modify modify = new Modify();
         private void NhanPhong_Load(object sender, EventArgs e)
         {
@@ -20,19 +25,6 @@ namespace Nhom12_
             Load_GV();
         }
 
-        private void btnDong_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void Load_comboPhong()
-        {
-            cbLoaiPhong.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbPhong.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            string squery = "Select DISTINCT  lp.TenLoai From Phong p , LoaiPhong lp Where p.MaLoai = lp.Maloai and p.TrangThai = N'Trống'";
-            cbLoaiPhong.DataSource = modify.GetDataTable(squery);
-            cbLoaiPhong.DisplayMember = "TenLoai";
-        }
         private void Load_GV()
         {
             gvDatPhong.ReadOnly = true;
@@ -60,26 +52,14 @@ namespace Nhom12_
 
             cbPhong.Enabled = false;
         }
-        private void btnHuy_Click(object sender, EventArgs e)
+        private void Load_comboPhong()
         {
-            string maPhong;
-            string maPhieuDP;
-            string maChiTietDP;
-            if (gvNhanPhong.Rows.Count > 1 && gvNhanPhong.SelectedRows.Count > 0)
-            {
-                // lấy mã phòng 
-                maPhong = gvNhanPhong.CurrentRow.Cells[0].Value.ToString();
-                maPhieuDP = modify.GetID("Select  pdp.MaPhieuDP From Phong p , PhieuDatPhong pdp Where p.MaPhong  =pdp.MaPhong and  p.MaPhong =  '" + maPhong + "' ");
-                maChiTietDP = modify.GetID("Select ct.MaChiTietDatPhong from PhieuDatPhong pdp, ChiTietDatPhong ct where pdp.MaChiTietDP  = ct.MaChiTietDatPhong and  pdp.MaPhieuDP = '" + maPhieuDP + "'");
+            cbLoaiPhong.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbPhong.DropDownStyle = ComboBoxStyle.DropDownList;
 
-                // xóa phiếu đặt phòng 
-                string squery_del = "DELETE FROM PhieuDatPhong WHERE MaPhieuDP = '" + maPhieuDP + "'";
-                modify.Command(squery_del);
-                //
-                string squery_update = "Update Phong Set TrangThai = N'Trống' Where MaPhong = '" + maPhong + "'";
-                modify.Command(squery_update);
-                Load_GV();
-            }
+            string squery = "Select DISTINCT  lp.TenLoai From Phong p , LoaiPhong lp Where p.MaLoai = lp.Maloai and p.TrangThai = N'Trống'";
+            cbLoaiPhong.DataSource = modify.GetDataTable(squery);
+            cbLoaiPhong.DisplayMember = "TenLoai";
         }
 
         private void btnNhanPhong_Click(object sender, EventArgs e)
@@ -120,11 +100,6 @@ namespace Nhom12_
             }
         }
 
-        private void gvNhanPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void gvDatPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (gvDatPhong.Rows.Count > 0)
@@ -159,6 +134,28 @@ namespace Nhom12_
             }
         }
 
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            string maPhong;
+            string maPhieuDP;
+            string maChiTietDP;
+            if (gvNhanPhong.Rows.Count > 1 && gvNhanPhong.SelectedRows.Count > 0)
+            {
+                // lấy mã phòng 
+                maPhong = gvNhanPhong.CurrentRow.Cells[0].Value.ToString();
+                maPhieuDP = modify.GetID("Select  pdp.MaPhieuDP From Phong p , PhieuDatPhong pdp Where p.MaPhong  =pdp.MaPhong and  p.MaPhong =  '" + maPhong + "' ");
+                maChiTietDP = modify.GetID("Select ct.MaChiTietDatPhong from PhieuDatPhong pdp, ChiTietDatPhong ct where pdp.MaChiTietDP  = ct.MaChiTietDatPhong and  pdp.MaPhieuDP = '" + maPhieuDP + "'");
+
+                // xóa phiếu đặt phòng 
+                string squery_del = "DELETE FROM PhieuDatPhong WHERE MaPhieuDP = '" + maPhieuDP + "'";
+                modify.Command(squery_del);
+                //
+                string squery_update = "Update Phong Set TrangThai = N'Trống' Where MaPhong = '" + maPhong + "'";
+                modify.Command(squery_update);
+                Load_GV();
+            }
+        }
+
         private void btnSreach_Click(object sender, EventArgs e)
         {
             if (rdDanhSachDp.Checked == true)
@@ -173,6 +170,9 @@ namespace Nhom12_
             }
         }
 
-       
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

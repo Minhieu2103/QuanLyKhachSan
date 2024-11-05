@@ -251,7 +251,6 @@
             this.gvNhanPhong.RowHeadersWidth = 62;
             this.gvNhanPhong.Size = new System.Drawing.Size(392, 305);
             this.gvNhanPhong.TabIndex = 0;
-            this.gvNhanPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvNhanPhong_CellContentClick);
             // 
             // groupBox7
             // 
