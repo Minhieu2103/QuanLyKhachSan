@@ -1,5 +1,5 @@
 ﻿
-namespace Manager_Hotel
+namespace Nhom12_
 {
     partial class ThongKe
     {

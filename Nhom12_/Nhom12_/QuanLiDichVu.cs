@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nhom12_
 {
-    public partial class QuanLyDichVu : Form
+    public partial class QuanLiDichVu : Form
     {
-        public QuanLyDichVu()
+        public QuanLiDichVu()
         {
             InitializeComponent();
         }

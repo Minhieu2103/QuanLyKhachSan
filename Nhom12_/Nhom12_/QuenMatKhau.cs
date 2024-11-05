@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nhom12_
+namespace NHom12_
 {
     public partial class QuenMatKhau : Form
     {
@@ -30,11 +30,10 @@ namespace Nhom12_
             else
             {
                 string squery = "Select * from TaiKhoan where Email='" + email + "'";
-                if (modify.TaiKhoans(squery).Count != 0)
+                if(modify.TaiKhoans(squery).Count != 0)
                 {
                     MessageBox.Show("Mật Khẩu: " + modify.TaiKhoans(squery)[0].MatKhau, "Lấy Lại Mật Khẩu", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                }
-                else
+                }else
                 {
                     MessageBox.Show("Email chưa đăng ký", "Lấy Lại Mật Khẩu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 

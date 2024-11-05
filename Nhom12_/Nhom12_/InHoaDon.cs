@@ -1,4 +1,5 @@
-﻿using Nhom12_.ClassLogin;
+﻿
+using Nhom12_.ClassLogin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,13 +47,13 @@ namespace Nhom12_
             int TonngTien = 0;
             while (reader.Read())
             {
-                tongtienDV += reader.GetInt32(0);
+                tongtienDV += reader.GetInt32(0) ;
                 TonngTien = reader.GetInt32(1);
             }
             string squery1 = "Select hdp.ThanhTien from HoaDon hd, HoaDonPhong hdp where hd.MaHD = hdp.MaHD and hd.MaKH ='" + maKH + "'";
             DataTableReader reader1 = modify.GetDataTable(squery1).CreateDataReader();
             int TienPhong = 0;
-            while (reader1.Read())
+            while(reader1.Read())
             {
                 TienPhong = reader1.GetInt32(0);
             }
@@ -84,9 +85,9 @@ namespace Nhom12_
 
         private void Load_ThongTinPhong()
         {
-            string squery = "Select p.MaPhong, lp.TenLoai, lp.DonGia, ct.NgayNhan,ct.SoDem , lp.SoNguoi from ChiTietDatPhong ct, Phong p , PhieuDatPhong pdp, LoaiPhong lp , HoaDonPhong hdp,HoaDon hd  where ct.MaChiTietDatPhong = pdp.MaChiTietDP and pdp.MaPhong = p.MaPhong and p.MaLoai=  lp.Maloai and hd.MaHD =hdp.MaHD and hdp.MaChiTietDP = ct.MaChiTietDatPhong and hd.MaKH = '" + maKH + "' ";
+            string squery = "Select p.MaPhong, lp.TenLoai, lp.DonGia, ct.NgayNhan,ct.SoDem , lp.SoNguoi from ChiTietDatPhong ct, Phong p , PhieuDatPhong pdp, LoaiPhong lp , HoaDonPhong hdp,HoaDon hd  where ct.MaChiTietDatPhong = pdp.MaChiTietDP and pdp.MaPhong = p.MaPhong and p.MaLoai=  lp.Maloai and hd.MaHD =hdp.MaHD and hdp.MaChiTietDP = ct.MaChiTietDatPhong and hd.MaKH = '"+maKH+"' ";
             DataTableReader reader = modify.GetDataTable(squery).CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
                 lblTenPhong.Text = reader.GetString(0);
                 lblLoaiPhong.Text = reader.GetString(1);
@@ -101,7 +102,7 @@ namespace Nhom12_
         {
             string squery = "Select * From KhachHang Where MaKH = '" + maKH + "'";
             DataTableReader reader = modify.GetDataTable(squery).CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
                 lblTenKhachHang.Text = reader.GetString(1);
                 lblCMND.Text = reader.GetString(2);
@@ -127,7 +128,7 @@ namespace Nhom12_
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(maKH);
-            modify.Command("Update HoaDon set TrangThaiTT = N'Đã Thanh Toán' , NgayThanhToan = '" + DateTime.Now.ToString("yyyy-MM-dd") + "', NguoiThanhToan = N'" + HoTenNV + "'   where MaKH = '" + maKH + "'");
+            modify.Command("Update HoaDon set TrangThaiTT = N'Đã Thanh Toán' , NgayThanhToan = '"+DateTime.Now.ToString("yyyy-MM-dd")+ "', NguoiThanhToan = N'"+HoTenNV+"'   where MaKH = '" + maKH + "'");
             //MessageBox.Show("Đã Thanh Toán Xong"); /// thay thế code in hoa đơn
             Graphics g = this.CreateGraphics();
             bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
@@ -141,7 +142,6 @@ namespace Nhom12_
             e.Graphics.DrawImage(bmp, 0, 10);
         }
 
-
+       
     }
 }
-

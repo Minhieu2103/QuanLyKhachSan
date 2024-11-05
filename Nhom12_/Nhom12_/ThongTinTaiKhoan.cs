@@ -1,4 +1,5 @@
-﻿using Nhom12_.ClassLogin;
+﻿
+using Nhom12_.ClassLogin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,7 @@ namespace Nhom12_
             load_Data();
             load_MaNV();
             txtEmail.Enabled = false;
-            txtTenDangNhap.Enabled = false;
+            txtTenDangNhap.Enabled =false;
             cbChucVu.Enabled = false;
             lblChucVu.Enabled = false;
             txtTenNhanVien.Enabled = false;
@@ -45,7 +46,7 @@ namespace Nhom12_
         {
             string squery = " Select MaNV From NhanVien Where TenDangNhap = '" + tenTaiKhoan + "' ";
             DataTableReader reader = modify.GetDataTable(squery).CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
                 maNV = reader.GetString(0);
             }
@@ -53,11 +54,11 @@ namespace Nhom12_
 
         private void load_Data()
         {
-            string squery = "Select * From NhanVien where TenDangNhap ='" + tenTaiKhoan + "'";
+            string squery = "Select * From NhanVien where TenDangNhap ='" + tenTaiKhoan+"'";
             string squery_tk = "Select Email From TaiKhoan Where TenDangNhap = '" + tenTaiKhoan + "'";
             DataTableReader reader = modify.GetDataTable(squery).CreateDataReader();
             DataTableReader readerTK = modify.GetDataTable(squery_tk).CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
                 txtTenDangNhap.Text = reader.GetString(1);
                 cbChucVu.Text = reader.GetString(2);
@@ -72,7 +73,7 @@ namespace Nhom12_
                 dateNgayVaoLam.Text = reader["NgayVaoLam"].ToString();
 
             }
-            while (readerTK.Read())
+            while(readerTK.Read())
             {
                 txtEmail.Text = readerTK.GetString(0);
             }
@@ -89,13 +90,13 @@ namespace Nhom12_
                 modify.Command(squery_nv);
                 MessageBox.Show("Cập nhật thông tin nhân viên thành công", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
 
-            }
+             }
             catch
             {
                 MessageBox.Show("Cập nhật thông tin nhân viên Không thành công", "Update", MessageBoxButtons.OK, MessageBoxIcon.Error); ;
 
             }
-        }
+}
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

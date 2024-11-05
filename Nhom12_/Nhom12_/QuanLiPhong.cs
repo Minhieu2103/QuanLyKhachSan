@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Nhom12_
 {
-    public partial class QuanLyPhong : Form
+    public partial class QuanLiPhong : Form
     {
-        public QuanLyPhong()
+        public QuanLiPhong()
         {
             InitializeComponent();
         }

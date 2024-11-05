@@ -59,7 +59,7 @@ namespace Nhom12_
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             int n = gvHoaDon.Width / 10;
-            string squery = "Select hd.MaHD, hd.TongTien, kh.HoTen , hd.TrangThaiTT, hd.NguoiThanhToan, hd.NgayThanhToan from HoaDon hd, KhachHang kh where hd.MaKH =kh.MaKH and( kh.HoTen like N'%" + txtSearch.Text + "%' or hd.NguoiThanhToan like N'%" + txtSearch.Text + "%') ";
+            string squery = "Select hd.MaHD, hd.TongTien, kh.HoTen , hd.TrangThaiTT, hd.NguoiThanhToan, hd.NgayThanhToan from HoaDon hd, KhachHang kh where hd.MaKH =kh.MaKH and( kh.HoTen like N'%" + txtSearch.Text+"%' or hd.NguoiThanhToan like N'%"+txtSearch.Text+"%') ";
             gvHoaDon.DataSource = modify.GetDataTable(squery);
             gvHoaDon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             gvHoaDon.ReadOnly = true;
@@ -86,11 +86,6 @@ namespace Nhom12_
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            txtSearch.Clear();
         }
     }
 }

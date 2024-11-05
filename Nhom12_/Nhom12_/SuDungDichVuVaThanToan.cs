@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace Nhom12_
 {
@@ -50,21 +53,21 @@ namespace Nhom12_
         }
         public void loadComboBox()
         {
-            comboBoxLoaiDV.DisplayMember = "LoaiDichVu";
-            comboBoxLoaiDV.ValueMember = "MaDV";
-            comboBoxLoaiDV.DataSource = modify.GetDataTable(queryDV1);
+                comboBoxLoaiDV.DisplayMember = "LoaiDichVu";
+                comboBoxLoaiDV.ValueMember = "MaDV";
+                comboBoxLoaiDV.DataSource = modify.GetDataTable(queryDV1);
         }
-
-
+              
+     
         private void Load_gvHoaDonPhong(string maKH)
         {
             int n = dataGridViewHD.Width / 6;
             dataGridViewHD.ReadOnly = true;
             dataGridViewHD.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            string squery_test = "Select ct.MaKH from ChiTietDatPhong ct where ct.MaChiTietDatPhong in (Select MaChiTietDP from HoaDonPhong ) and ct.MaKH = '" + maKH + "'";
+            string squery_test = "Select ct.MaKH from ChiTietDatPhong ct where ct.MaChiTietDatPhong in (Select MaChiTietDP from HoaDonPhong ) and ct.MaKH = '"+maKH+"'";
             string maKH_test = modify.GetID(squery_test);
-            if (maKH == maKH_test)
+             if(maKH == maKH_test)
             { }
             else
             {
@@ -72,25 +75,25 @@ namespace Nhom12_
                 MessageBox.Show("Tọa mới hóa đơn phòng");
                 string maHDPhong = "HP";
                 Random rd = new Random();
-                while (true)
+                while(true)
                 {
                     try // tạo hóa đơn phòng
                     {
                         string maChiTietDP = modify.GetID("Select MaChiTietDatPhong from ChiTietDatPhong where MaKH = '" + maKH + "'");
                         string maHD = modify.GetID("Select hd.MaHD from HoaDon hd where hd.maKH ='" + maKH + "'");
                         maHDPhong += rd.Next(100, 1000);
-                        DataTableReader reader = modify.GetDataTable("Select ct.SoDem ,lp.DonGia from ChiTietDatPhong ct , LoaiPhong lp where ct.TenLoai = lp.TenLoai and ct.MaKH ='" + maKH + "'").CreateDataReader();
+                        DataTableReader reader = modify.GetDataTable("Select ct.SoDem ,lp.DonGia from ChiTietDatPhong ct , LoaiPhong lp where ct.TenLoai = lp.TenLoai and ct.MaKH ='"+maKH+"'").CreateDataReader();
 
-                        int tienPhong = 0;
-                        int soDem = 0;
+                        int tienPhong =0;
+                        int soDem =0;
 
-                        while (reader.Read())
+                        while(reader.Read())
                         {
                             soDem = reader.GetInt32(0);
                             tienPhong = reader.GetInt32(1);
                         }
                         int tongtien = soDem * tienPhong;
-                        string squery_insert = "Insert into HoaDonPhong values('" + maHDPhong + "', '" + maChiTietDP + "', '" + tongtien + "', '" + maHD + "')";
+                        string squery_insert = "Insert into HoaDonPhong values('" + maHDPhong + "', '" + maChiTietDP + "', '" + tongtien + "', '"+maHD+"')";
                         modify.Command(squery_insert);
                         break;
                     }
@@ -100,14 +103,14 @@ namespace Nhom12_
                         maHDPhong = "HP";
                     }
                 }
-
+                
 
             }
 
             dataGridViewHD.DataSource = modify.GetDataTable("Select p.MaPhong , lp.DonGia, ct.NgayNhan, ct.NgayTra, hdp.ThanhTien, hd.TongTien From ChiTietDatPhong ct, LoaiPhong lp, Phong p, PhieuDatPhong pdp, HoaDonPhong hdp, HoaDon hd where ct.MaChiTietDatPhong = pdp.MaChiTietDP and p.MaLoai = lp.Maloai and pdp.MaPhong = p.MaPhong and hd.MaHD = hdp.MaHD  and hdp.MaChiTietDP =ct.MaChiTietDatPhong and  ct.MaKH ='" + maKH + "'");
 
             dataGridViewHD.Columns[0].HeaderText = "Tên Phòng";
-            dataGridViewHD.Columns[0].Width = n;
+            dataGridViewHD.Columns[0].Width = n ;
 
             dataGridViewHD.Columns[1].HeaderText = "Đơn Giá";
             dataGridViewHD.Columns[1].Width = n;
@@ -133,13 +136,13 @@ namespace Nhom12_
             comboBoxDV.DisplayMember = "TenDV";
             comboBoxDV.ValueMember = "MaDV";
             comboBoxDV.DataSource = modify.GetDataTable(queryLoaiDV);
-
-        }
+       
+         }
 
         private void comboBoxDV_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            String squeryDV = "select DonGia from DichVu where TenDV = N'" + comboBoxDV.Text + "'";
+            
+            String squeryDV= "select DonGia from DichVu where TenDV = N'" + comboBoxDV.Text+ "'";
             txtGia.Text = modify.loadtextBox(squeryDV).Rows[0]["DonGia"].ToString();
         }
 
@@ -160,20 +163,20 @@ namespace Nhom12_
             dataGridViewAddDV.Columns[4].Width = n * 2;
         }
 
-        private void KiemTraTaoMoiHD(string maKH)
+        private void KiemTraTaoMoiHD (string maKH)
         {
-
+            
 
             // kiểm tra khách hàng có tạo hóa đơn chưa 
             string squery_test = "Select kh.MaKH from KhachHang kh where kh.MaKH in(Select MaKH From HoaDon ) and kh.MaKH = '" + maKH + "'";
             string maKH_test = modify.GetID(squery_test);
-            if (maKH_test == maKH)
-            { }
+            if(maKH_test == maKH)
+            {            }
             else // tạo Hóa Đơn
             {
                 MessageBox.Show(" Chưa có hóa đơn tạo hóa đơn ");
                 string maHD = "B";
-                while (true)
+                while(true)
                 {
                     try
                     {
@@ -197,18 +200,18 @@ namespace Nhom12_
         {
             string maHDDichVu = "HD";
             string maKH = dataGridViewPhong.CurrentRow.Cells[0].Value.ToString();
-            string maHD = modify.GetID("Select MaHD from HoaDon where MaKH = '" + maKH + "'");
+            string maHD = modify.GetID("Select MaHD from HoaDon where MaKH = '"+maKH+"'");
             string maDV = "";
             int dongia = 0;
-
+           
 
             DataTableReader reader = modify.GetDataTable("Select MaDV ,DonGia from DichVu where TenDV =N'" + comboBoxDV.Text + "' and LoaiDichVu =N'" + comboBoxLoaiDV.Text + "'").CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
                 maDV = reader.GetString(0).Trim();
                 dongia = reader.GetInt32(1);
             }
-            int soluong = (int)udSoLuong.Value;
+            int soluong = (int) udSoLuong.Value ;
             int thanhtien = soluong * dongia;
             while (true)
             {
@@ -231,7 +234,7 @@ namespace Nhom12_
             CapNhatTien(maKH);
             Load_gvThemDichVu(maKH);
             Load_gvHoaDonPhong(maKH);
-        }
+            }
 
         private void CapNhatTien(string maKH)
         {
@@ -257,7 +260,7 @@ namespace Nhom12_
         {
             this.Close();
         }
-
+      
         private void btnXoaDV_Click(object sender, EventArgs e)
         {
             string maHDDV = "";
@@ -279,9 +282,9 @@ namespace Nhom12_
             string squery = "Select TongTien from HoaDon where MaKH= '" + maKH + "'";
             int tongtien = 0;
             DataTableReader reader = modify.GetDataTable(squery).CreateDataReader();
-            while (reader.Read())
+            while(reader.Read())
             {
-                tongtien += reader.GetInt32(0);
+                tongtien += reader.GetInt32(0); 
             }
 
             int i = dataGridViewPhong.CurrentRow.Index;
@@ -301,11 +304,11 @@ namespace Nhom12_
         private void udGiamGia_ValueChanged(object sender, EventArgs e)
         {
             int tongtien = int.Parse(txtTongTien.Text);
-            tongtien -= (int)udGiamGia.Value;
+            tongtien -= (int) udGiamGia.Value;
             tongtien = tongtien < 0 ? 0 : tongtien;
             string maKH = dataGridViewPhong.CurrentRow.Cells[0].Value.ToString();
             // 
-            modify.Command("Update HoaDon set TongTien = '" + tongtien + "' where MaKH = '" + maKH + "' ");
+            modify.Command("Update HoaDon set TongTien = '" + tongtien + "' where MaKH = '"+maKH+"' ");
             txtTongTien.Text = tongtien + "";
 
         }
@@ -318,10 +321,10 @@ namespace Nhom12_
             if (kt_thongtin_thanhtoan == "Đã Thanh Toán")
             {
                 MessageBox.Show("Hóa Đơn Này Đã Được Thanh Toán", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                
             }
 
-           InHoaDon hd = new InHoaDon(maKH, HoTenNhanVien, int.Parse(txtTongTien.Text), maHD, (int)udGiamGia.Value);
+            InHoaDon hd = new InHoaDon(maKH, HoTenNhanVien, int.Parse(txtTongTien.Text), maHD, (int) udGiamGia.Value);
             hd.ShowDialog();
         }
 

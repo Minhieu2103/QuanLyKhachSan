@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Manager_Hotel
+namespace Nhom12_
 {
     public partial class ThongKe : Form
     {

@@ -1,35 +1,33 @@
-﻿using System;
+﻿
+using Nhom12_.ClassLogin;
+using NHom12_;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Nhom12_.ClassLogin;
 
 namespace Nhom12_
+
 {
     public partial class Login : Form
     {
         public Login()
         {
             InitializeComponent();
-
         }
         Modify modify = new Modify();
-        public static string tenTK = "";
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        public static string tenTK = ""
+;        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             tenTK = txtUserName.Text;
             string matKhau = txtPass.Text;
-            if (tenTK.Trim() == "")
+            if(tenTK.Trim() == "")
             {
                 MessageBox.Show("Nhập Tài Khoản", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
@@ -39,13 +37,13 @@ namespace Nhom12_
             }
             else
             {
-                string squery = "select * from TaiKhoan where TenDangNhap= '" + tenTK + "' and MatKhau = '" + matKhau + "'";
-                if (modify.TaiKhoans(squery).Count > 0)
+                string squery = "select * from TaiKhoan where TenDangNhap= '" + tenTK + "' and MatKhau = '"+matKhau+"'";
+                if(modify.TaiKhoans(squery).Count > 0 )
                 {
                     this.Hide();
                     Main main = new Main();
                     main.ShowDialog();
-
+                    
                 }
                 else
                 {
@@ -60,6 +58,31 @@ namespace Nhom12_
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void lblQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            QuenMatKhau mk = new QuenMatKhau();
+            mk.ShowDialog();
+        }
+
+        private void lblDangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DangKy dk = new DangKy();
+            dk.ShowDialog();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnDangNhap_Click(sender,e);
+            }
         }
     }
 }
