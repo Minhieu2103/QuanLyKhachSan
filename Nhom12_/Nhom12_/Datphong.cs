@@ -1,4 +1,5 @@
-﻿using Nhom12_.ClassLogin;
+﻿
+using Nhom12_.ClassLogin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,64 +19,6 @@ namespace Nhom12_
             InitializeComponent();
         }
         Modify modify = new Modify();
-        private void Datphong_Load(object sender, EventArgs e)
-        {
-            Load_cbLoaiPhong();
-            Load_gvDSDatPhong();
-        }
-        private void Load_gvDSDatPhong()
-        {
-            dataGridViewDSDatPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewDSDatPhong.ReadOnly = true;
-            string squery = "Select ct.MaChiTietDatPhong, kh.HoTen, kh.CMND, ct.TenLoai,ct.NgayNhan, ct.NgayTra from ChiTietDatPhong ct, KhachHang kh where ct.MaKH = kh.Makh ";
-            DataTable dt = modify.GetDataTable(squery);
-            dataGridViewDSDatPhong.DataSource = dt;
-            dataGridViewDSDatPhong.Columns[0].HeaderText = "Mã Phòng";
-            dataGridViewDSDatPhong.Columns[1].HeaderText = "Họ Tên";
-            dataGridViewDSDatPhong.Columns[2].HeaderText = "Số CMND";
-            dataGridViewDSDatPhong.Columns[3].HeaderText = "Loại Phòng";
-            dataGridViewDSDatPhong.Columns[4].HeaderText = "Ngày Nhận";
-            dataGridViewDSDatPhong.Columns[5].HeaderText = "Ngày Trả";
-        }
-        private void Load_cbLoaiPhong()
-        {
-            try
-            {
-                string query = "Select * from LoaiPhong p";
-                DataTable dt = modify.GetDataTable(query);
-                cbLoaiPhong.DataSource = dt;
-                cbLoaiPhong.DisplayMember = "TenLoai";
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi");
-            }
-        }
-        private void xoatrang()
-        {
-            txtHoTen.Clear();
-            txtCMND.Clear();
-            cbBoxLoaiKhachHang.SelectedIndex = -1;
-            txtSoDienThoai.Clear();
-            cbBoxGioiTinh.SelectedIndex = -1;
-            cbBoxQuocTich.SelectedIndex = -1;
-            txtDiaChi.Clear();
-            udSoDem.Value = 0;
-            cbLoaiPhong.Focus();
-
-        }
-        private void btnTimKiemKH_Click(object sender, EventArgs e)
-        {
-            string socm = txtTimKiemCMND_KH.Text;
-
-            string squery_cmnd = "select * from KhachHang kh where kh.CMND like '%" + socm + "%'";
-            dataGridViewDSDatPhong.DataSource = modify.GetDataTable(squery_cmnd);
-        }
-
-        private void btnHuyTK_Click(object sender, EventArgs e)
-        {
-            Load_gvDSDatPhong();
-        }
 
         private void btnChiTietDatPhong_Click(object sender, EventArgs e)
         {
@@ -132,7 +75,7 @@ namespace Nhom12_
                 {
                     int id = rd.Next(100, 1000);
                     id_ctdp += +id;
-                    string squeryChiTietDatPhong = "insert into ChiTietDatPhong values('" + id_ctdp + "', '" + NgayNhan + "', '" + NgayTra + "', '" + SoDem + "', '" + id_kh + "', '" + LoaiPhong + "' )";
+                    string squeryChiTietDatPhong = "insert into ChiTietDatPhong values('" + id_ctdp + "', '" + NgayNhan + "', '" + NgayTra + "', '" + SoDem + "', '" + id_kh + "', '"+LoaiPhong+"' )";
                     modify.Command(squeryChiTietDatPhong);
                     break;
                 }
@@ -144,7 +87,7 @@ namespace Nhom12_
                     return;
                 }
             }
-            if (cboxChuyenPhong.Checked == true)
+            if(cboxChuyenPhong.Checked == true)
             {
                 this.Close();
                 NhanPhong np = new NhanPhong();
@@ -154,6 +97,53 @@ namespace Nhom12_
             Load_gvDSDatPhong();
         }
 
+        private void DatPhong_Load(object sender, EventArgs e)
+        {
+            Load_cbLoaiPhong();
+            Load_gvDSDatPhong();
+        }
+        private void Load_gvDSDatPhong()
+        {
+            dataGridViewDSDatPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewDSDatPhong.ReadOnly = true;
+            string squery = "Select ct.MaChiTietDatPhong, kh.HoTen, kh.CMND, ct.TenLoai,ct.NgayNhan, ct.NgayTra from ChiTietDatPhong ct, KhachHang kh where ct.MaKH = kh.Makh ";
+            DataTable dt = modify.GetDataTable(squery);
+            dataGridViewDSDatPhong.DataSource = dt;
+            dataGridViewDSDatPhong.Columns[0].HeaderText = "Mã Phòng";
+            dataGridViewDSDatPhong.Columns[1].HeaderText = "Họ Tên";
+            dataGridViewDSDatPhong.Columns[2].HeaderText = "Số CMND";
+            dataGridViewDSDatPhong.Columns[3].HeaderText = "Loại Phòng";
+            dataGridViewDSDatPhong.Columns[4].HeaderText = "Ngày Nhận";
+            dataGridViewDSDatPhong.Columns[5].HeaderText = "Ngày Trả";
+        }
+
+        private void Load_cbLoaiPhong()
+        {
+            try
+            {
+                string query = "Select * from LoaiPhong p";
+                DataTable dt = modify.GetDataTable(query);
+                cbLoaiPhong.DataSource = dt;
+                cbLoaiPhong.DisplayMember = "TenLoai";
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi");
+            }
+        }
+        private void xoatrang()
+        {
+            txtHoTen.Clear();
+            txtCMND.Clear();
+            cbBoxLoaiKhachHang.SelectedIndex = -1;
+            txtSoDienThoai.Clear();
+            cbBoxGioiTinh.SelectedIndex = -1;
+            cbBoxQuocTich.SelectedIndex = -1;
+            txtDiaChi.Clear();
+            udSoDem.Value = 0;
+            cbLoaiPhong.Focus();
+
+        }
         private void btnHuy_Click(object sender, EventArgs e)
         {
             xoatrang();
@@ -165,11 +155,26 @@ namespace Nhom12_
             Main m = new Main();
             m.Show();
         }
+
+        private void btnTimKiemKH_Click(object sender, EventArgs e)
+        {
+            string socm = txtTimKiemCMND_KH.Text;
+         
+            string squery_cmnd = "select * from KhachHang kh where kh.CMND like '%" + socm + "%'";
+            dataGridViewDSDatPhong.DataSource = modify.GetDataTable(squery_cmnd);
+
+        }
+
+        private void btnHuyTK_Click(object sender, EventArgs e)
+        {
+            Load_gvDSDatPhong();
+        }
+
         private void dataGridViewDSDatPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = dataGridViewDSDatPhong.SelectedRows[0];
             string maChiTietDP = row.Cells[0].Value.ToString();
-            string squery_infor = "Select lp.Maloai, lp.TenLoai, lp.SoNguoi, lp.DonGia From ChiTietDatPhong ct , KhachHang kh, LoaiPhong lp Where ct.MaKH = kh.MaKH and ct.TenLoai = lp.TenLoai and ct.MaChiTietDatPhong = '" + maChiTietDP + "'";
+            string squery_infor = "Select lp.Maloai, lp.TenLoai, lp.SoNguoi, lp.DonGia From ChiTietDatPhong ct , KhachHang kh, LoaiPhong lp Where ct.MaKH = kh.MaKH and ct.TenLoai = lp.TenLoai and ct.MaChiTietDatPhong = '"+maChiTietDP+"'";
 
             DataTable data = modify.GetDataTable(squery_infor);
             DataTableReader tableReader = data.CreateDataReader();
@@ -180,10 +185,6 @@ namespace Nhom12_
                 txtSoLuongNguoiToiDa.Text = tableReader.GetInt32(2) + "";
                 txtGia.Text = tableReader.GetInt32(3) + "";
             }
-        }
-        private void cboxChuyenPhong_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
