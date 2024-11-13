@@ -21,34 +21,20 @@ namespace Nhom12_
         {
             InitializeComponent();
         }
-        Modify modify = new Modify();
         public static string tenTK = ""
 ;        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            tenTK = txtUserName.Text;
+        {          
+            string tenTK = txtUserName.Text;
             string matKhau = txtPass.Text;
-            if(tenTK.Trim() == "")
+
+            Login3 login3 = new Login3();
+            bool dangNhapThanhCong = login3.KiemTraDangNhap(tenTK, matKhau);
+
+            if (dangNhapThanhCong)
             {
-                MessageBox.Show("Nhập Tài Khoản", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            }
-            else if (matKhau.Trim() == "")
-            {
-                MessageBox.Show("Nhập Mật Khẩu ", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                string squery = "select * from TaiKhoan where TenDangNhap= '" + tenTK + "' and MatKhau = '"+matKhau+"'";
-                if(modify.TaiKhoans(squery).Count > 0 )
-                {
-                    this.Hide();
-                    Main main = new Main();
-                    main.ShowDialog();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Sai Tài Khoản Hoặc Mật Khẩu", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-                }
+                this.Hide();
+                Main main = new Main();
+                main.ShowDialog();
             }
             txtPass.Clear();
             txtUserName.Clear();

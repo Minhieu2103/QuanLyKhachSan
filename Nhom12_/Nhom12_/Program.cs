@@ -16,7 +16,7 @@ namespace Nhom12_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DatPhong());
+            Application.Run(new Login());
         }
     }
 }

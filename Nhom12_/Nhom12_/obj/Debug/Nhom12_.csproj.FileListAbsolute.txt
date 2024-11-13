@@ -45,3 +45,6 @@ C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\De
 C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.Login.resources
 C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.QuenMatKhau.resources
 C:\Users\minhhieu\source\repos\Minhieu2103\QuanLyKhachSan\Nhom12_\Nhom12_\obj\Debug\Nhom12_.ThongTinTaiKhoan.resources
+C:\Users\Admin\Source\Repos\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.exe.config
+C:\Users\Admin\Source\Repos\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.exe
+C:\Users\Admin\Source\Repos\QuanLyKhachSan\Nhom12_\Nhom12_\bin\Debug\Nhom12_.pdb
