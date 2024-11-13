@@ -27,7 +27,7 @@ namespace Nhom12_
             string tenTK = txtUserName.Text;
             string matKhau = txtPass.Text;
 
-            Login3 login3 = new Login3();
+            ClLogin login3 = new ClLogin();
             bool dangNhapThanhCong = login3.KiemTraDangNhap(tenTK, matKhau);
 
             if (dangNhapThanhCong)

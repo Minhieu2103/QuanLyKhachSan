@@ -9,7 +9,7 @@ using Nhom12_.ClassLogin;
 namespace Nhom12_
 {
    
-    internal class Login3
+    internal class ClLogin
     {
         private Modify modify = new Modify(); // giả sử Modify là lớp truy xuất dữ liệu
 

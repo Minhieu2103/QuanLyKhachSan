@@ -54,19 +54,9 @@
       <DependentUpon>ChiTietDatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassLogin\ClChiTietDatPhong.cs" />
-    <Compile Include="ClassLogin\ClInHoaDon.cs" />
-    <Compile Include="ClassLogin\ClNhanPhong.cs" />
-    <Compile Include="ClassLogin\ClQuanLyDichVu.cs" />
-    <Compile Include="ClassLogin\ClQUanLyHoaDon.cs" />
-    <Compile Include="ClassLogin\ClQuanLyNhanVien.cs" />
-    <Compile Include="ClassLogin\ClQuanLyPhong.cs" />
     <Compile Include="ClassLogin\ClQuenMatKhau.cs" />
-    <Compile Include="ClassLogin\ClSuDungDichVuVaThanhToan.cs" />
-    <Compile Include="ClassLogin\ClThongKe.cs" />
-    <Compile Include="ClassLogin\ClThongTinTaiKhoan.cs" />
     <Compile Include="ClassLogin\Connection.cs" />
     <Compile Include="ClassLogin\ClDangKy.cs" />
-    <Compile Include="ClassLogin\ClDatPhong.cs" />
     <Compile Include="ClassLogin\DichVu.cs" />
     <Compile Include="ClassLogin\Modify.cs" />
     <Compile Include="ClassLogin\TaiKhoan.cs" />
@@ -94,7 +84,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login3.cs" />
+    <Compile Include="ClassLogin\ClLogin.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
