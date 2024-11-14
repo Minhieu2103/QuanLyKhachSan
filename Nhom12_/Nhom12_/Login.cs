@@ -1,4 +1,5 @@
 ﻿using Nhom12_.ClassLogin;
+using NHom12_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,6 +81,11 @@ namespace Nhom12_
             {
                 btnDangNhap_Click(sender,e);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
