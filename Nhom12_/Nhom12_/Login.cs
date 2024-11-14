@@ -1,6 +1,4 @@
-﻿
-using Nhom12_.ClassLogin;
-using NHom12_;
+﻿using Nhom12_.ClassLogin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +11,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Nhom12_
-
 {
     public partial class Login : Form
     {
@@ -21,20 +18,34 @@ namespace Nhom12_
         {
             InitializeComponent();
         }
+        Modify modify = new Modify();
         public static string tenTK = ""
 ;        private void btnDangNhap_Click(object sender, EventArgs e)
-        {          
-            string tenTK = txtUserName.Text;
+        {
+            tenTK = txtUserName.Text;
             string matKhau = txtPass.Text;
-
-            ClLogin login3 = new ClLogin();
-            bool dangNhapThanhCong = login3.KiemTraDangNhap(tenTK, matKhau);
-
-            if (dangNhapThanhCong)
+            if(tenTK.Trim() == "")
             {
-                this.Hide();
-                Main main = new Main();
-                main.ShowDialog();
+                MessageBox.Show("Nhập Tài Khoản", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }
+            else if (matKhau.Trim() == "")
+            {
+                MessageBox.Show("Nhập Mật Khẩu ", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string squery = "select * from TaiKhoan where TenDangNhap= '" + tenTK + "' and MatKhau = '"+matKhau+"'";
+                if(modify.TaiKhoans(squery).Count > 0 )
+                {
+                    this.Hide();
+                    Main main = new Main();
+                    main.ShowDialog();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Sai Tài Khoản Hoặc Mật Khẩu", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
             }
             txtPass.Clear();
             txtUserName.Clear();

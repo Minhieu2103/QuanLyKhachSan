@@ -1,5 +1,5 @@
 ﻿
-namespace NHom12_
+namespace Nhom12_
 {
     partial class QuenMatKhau
     {
